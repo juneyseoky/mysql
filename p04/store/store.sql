@@ -106,3 +106,11 @@ select s.no, goodsName, goodsCode, price from goodsStock as g
 left join saleList as s on s.sellCode = g.goodsCode;
 
 select * from saleResult;
+
+show tables;
+
+drop view saleResult;
+
+################## INDEX #################
+# create FullText Index I/N On T/N(C/N); 으로 생성
+show index from goodsList;
