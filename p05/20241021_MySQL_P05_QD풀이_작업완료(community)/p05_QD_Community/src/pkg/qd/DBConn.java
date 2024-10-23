@@ -31,5 +31,11 @@ public class DBConn {
 			System.out.println("SQLE : " + e.getMessage());
 		}
 	}
+	
+//	다형성을 위한 오버라이딩 DBConn을 상속한 클래스의
+//	메소드명이 같으면 메인에서의 객체생성에 따라
+//	해당 메서드를 호출하기 위해 만듬
+	
+	public void mtdMemList() {}
 
 }

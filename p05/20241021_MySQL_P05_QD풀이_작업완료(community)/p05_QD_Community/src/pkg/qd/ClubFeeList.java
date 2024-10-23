@@ -9,11 +9,11 @@ import java.text.DecimalFormat;
 
 public class ClubFeeList extends DBConn{
 
-
 	private Connection conn;
 	private Statement stmt;
 	private ResultSet rs;
 	
+	// MemberList의 mtdMemList 메서드명과 같음
 	public void mtdMemList() {
 	
 		DecimalFormat df = new DecimalFormat("#,###");

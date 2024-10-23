@@ -12,6 +12,7 @@ public class MemberList extends DBConn{
 	private Statement stmt;
 	private ResultSet rs;
 	
+	// ClubFeeList의 mtdMemList 메서드명과 같음
 	public void mtdMemList() {
 		try {
 			

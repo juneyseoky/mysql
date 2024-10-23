@@ -19,15 +19,22 @@ public class Main {
 			int num = scanner.nextInt();
 			
 			System.out.println();
+			DBConn dbConn = null;
 			if (num == 1) {
-				MemberList memberList = new MemberList();
-				memberList.mtdMemList();
+				// MemberList 객체 생성
+				dbConn = new MemberList();
+//				memberList.mtdMemList();
 			} else if (num == 2) {
-				ClubFeeList clubFeeList = new ClubFeeList();
-				clubFeeList.mtdMemList();
+				// ClubFeeList 객체 생성
+				dbConn = new ClubFeeList();
+//				clubFeeList.mtdMemList();
 			} else if(num == 3) {
 				break;
 			}
+			// ClubFeeList 와 MemberList 의 mtdMemList를 호출
+			// dbConn클래스에도 mtdMemList라는 빈 메서드가 존재하지만
+			// 호출시 DBConn 클래스를 상속한 자식 클래스의 mtdMemList를 호출
+			dbConn.mtdMemList();
 			System.out.println();
 		}
 
