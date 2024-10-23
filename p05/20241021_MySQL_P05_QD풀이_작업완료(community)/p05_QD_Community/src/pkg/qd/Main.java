@@ -8,7 +8,7 @@ public class Main {
 		
 		Scanner scanner = null;
 		while(true) {
-			System.out.println("작업을 선택하세요.");
+			System.out.println("작업을 선택하세요.(리팩토리1)");
 			String menu = "1.회원목록 보기   ";
 			menu += "2.회비내역 보기   ";
 			menu += "3.끝내기";
